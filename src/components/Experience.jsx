@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react/prop-types */
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
 
@@ -6,8 +9,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { textVariant } from '../utils/motion';
-import { div } from 'three/examples/jsm/nodes/Nodes.js';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const ExperienceCard = ({experience}) => (
   <VerticalTimelineElement

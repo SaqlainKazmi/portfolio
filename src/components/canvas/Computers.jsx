@@ -1,12 +1,11 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
+import { 
   OrbitControls,
   Preload,
-  Shadow,
-  useGLTF,
-  Html, // Import Html from @react-three/drei
-} from "@react-three/drei";
+  useGLTF} from "@react-three/drei";
+
+
 import CanvasLoader from "../Loader";
 
 const Computers = ({isMobile}) => {
@@ -58,7 +57,7 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [10, 3, 5], fov: 25 }}
+      camera={{ position: [20, 3, 5], fov: 35 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense
