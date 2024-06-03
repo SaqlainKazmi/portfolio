@@ -50,7 +50,6 @@ const BallCanvas = ({icon}) => {
     >
       <Suspense fallback={<CanvasLoader />}>
         {" "}
-        {/* Wrap fallback content in Html */}
         <OrbitControls
           enableZoom={false}
         />
